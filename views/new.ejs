@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    
+    <div class="page-wrapper bg-dark p-t-100 p-b-50">
+      <div class="wrapper wrapper--w900">
+          <div class="card card-6">
+              <div class="card-heading">
+                  <h2 class="title">Message Board</h2>
+              </div>
+              <div class="card-body">
+                  <form method="POST" action="/new">
+                      <div class="form-row">
+                          <div class="name">Full name</div>
+                          <div class="value">
+                              <input class="input--style-6" type="text" name="full_name">
+                          </div>
+                      </div>
+                      
+                      <div class="form-row">
+                          <div class="name">Message</div>
+                          <div class="value">
+                              <div class="input-group">
+                                  <textarea class="textarea--style-6" name="message" placeholder="Message sent to the employer"></textarea>
+                              </div>
+                          </div>
+                      </div>
+                     
+                  </form>
+              </div>
+              <div class="card-footer">
+                  <button class="btn btn--radius-2 btn--blue-2" type="submit">Send Application</button>
+              </div>
+          </div>
+      </div>
+      
+        
+    </div>
+
+  </div>
+  
+  <script src="vendor/jquery/jquery.min.js"></script>
+  </body>
+</html>
