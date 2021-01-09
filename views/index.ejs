@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    
+<% include partials/_header %>
     <div class="page-wrapper bg-dark p-t-100 p-b-50">
       <div class="wrapper wrapper--w900">
           <div class="card card-6">
@@ -18,19 +9,15 @@
                 <div class="card-footer">
                     <a class="btn btn--radius-2 btn--blue-2" role="button" href='/new'>Add message</a>
                 </div>
-                  
-                      <div class="form-row">
-                          <div class="name">Full name</div>
-                          <p>Nafhjgfjfghjfghjfghjfghjfghjfghjfgh fghd fgh fghn gfh me</p>
-                      </div>
-                      <div class="form-row">
-                        <div class="name">Full name</div>
-                        <p>Nafhjgfjfghjfghjfghjfghjfghjfghjfgh fghd fgh fghn gfh me</p>
-                      </div>
-                      <div class="form-row">
-                        <div class="name">Full name</div>
-                        <p>Nafhjgfjfghjfghjfghjfghjfghjfghjfgh fghd fgh fghn gfh me</p>
-                      </div>
+                    <% message.forEach(function(x){ %>
+                         <div class="form-row">
+                            <div class="name"><%= x.user %></div>
+                            <p><%= x.text %></p>
+                        </div>
+
+
+                    <%})%>
+                      
                       
                      
                      
@@ -45,6 +32,5 @@
 
   </div>
   
-  <script src="vendor/jquery/jquery.min.js"></script>
-  </body>
-</html>
+  
+<% include partials/_footer %>
