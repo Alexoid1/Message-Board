@@ -1,5 +1,5 @@
 # Message Board
- Write a message.
+ Write a message use mongo database to store message.
 
 ![screenshot](./img/image1.png)
 ![screenshot](./img/image2.png)
