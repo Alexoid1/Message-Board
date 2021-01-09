@@ -9,17 +9,18 @@
                 <div class="card-footer">
                     <a class="btn btn--radius-2 btn--blue-2" role="button" href='/new'>Add message</a>
                 </div>
-                    <% message.forEach(function(x){ %>
+                    <% message.reverse().forEach(function(x){ %>
                          <div class="form-row">
-                           
-                            <div class="name"><%= x.user %></div>
-                            <p><%= x.text %></p>
-                            
-                            
+                            <div class="name">
+                                <div class='greyBox'>
+                                    <img src="<%= x.image %>" class='omg'>
+                                </div>
+                                <p class='mLeft'>Name: <%= x.user %></p></div>
+                            <p class=''><%= x.text %></p>
                         </div>
-                        <div class='delt'>
+                        <!-- <div class='delt'>
                             <a class="btnRed" href="/delete/<%= x.id %>" >Delete</a>
-                        </div>
+                        </div> -->
                     <%})%>                                  
               </div>       
           </div>

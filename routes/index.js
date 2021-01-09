@@ -37,7 +37,8 @@ router.post('/new', async (req, res, next) => {
   let newMessage = {
     
     text: req.body.message,
-    user: req.body.full_name
+    user: req.body.full_name,
+    image: req.body.image_url
     
   } 
   const task = new Message(newMessage);

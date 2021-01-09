@@ -25,6 +25,19 @@ a {
   font-weight: bolder;
 }
 
+.greyBox {
+  width:75px;
+  height: 75px;
+  border-radius: 100%;
+  background:url(../images/imgPro.jpg);
+  background-size: cover;
+}
+
+.omg {
+  width: 100%;
+}
+
+
 /* ==========================================================================
    #FONT
    ========================================================================== */
