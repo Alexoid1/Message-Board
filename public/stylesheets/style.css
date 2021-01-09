@@ -6,6 +6,24 @@ body {
 a {
   color: #00B7FF;
 }
+.delt {
+  padding: 24px 55px;
+  border-bottom: 1px solid #e5e5e5;
+
+}
+
+.btnRed {
+ 
+  border-radius: 10px;
+  color:grey;
+  font-size:16px;
+  text-decoration: none;
+}
+
+.btnRed:hover {
+  color: rgb(153, 57, 57);
+  font-weight: bolder;
+}
 
 /* ==========================================================================
    #FONT
@@ -84,8 +102,10 @@ a {
     -ms-flex-align: start;
     align-items: flex-start;
     padding: 24px 55px;
-    border-bottom: 1px solid #e5e5e5;
+    
   }
+
+  
   
   .form-row .name {
     width: 188px;

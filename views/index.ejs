@@ -11,26 +11,19 @@
                 </div>
                     <% message.forEach(function(x){ %>
                          <div class="form-row">
+                           
                             <div class="name"><%= x.user %></div>
                             <p><%= x.text %></p>
+                            
+                            
                         </div>
-
-
-                    <%})%>
-                      
-                      
-                     
-                     
-                  
-              </div>
-              
+                        <div class='delt'>
+                            <a class="btnRed" href="/delete/<%= x.id %>" >Delete</a>
+                        </div>
+                    <%})%>                                  
+              </div>       
           </div>
-      </div>
-     
-        
+      </div>      
     </div>
-
-  </div>
-  
-  
+  </div>  
 <% include partials/_footer %>

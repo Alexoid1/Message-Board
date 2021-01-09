@@ -6,11 +6,11 @@ var logger = require('morgan');
 var mongoose = require('mongoose');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-
+require('dotenv').config();
 var app = express();
 
 // database mongo
-var mongoDB = 'mongodb+srv://';
+var mongoDB = `mongodb+srv://${process.env.NAME}:${process.env.key}@cluster0.jofqj.mongodb.net/message_board?retryWrites=true&w=majority`;
 mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true});
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
