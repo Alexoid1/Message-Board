@@ -14,7 +14,7 @@
 - Ejs
 
 ## Live Demo
-[Live Demo Link](https://message-boarddd.herokuapp.com)
+[Live Demo Link](https://Message-Board.alexoid.repl.co)
  
 
 ### Prerequisites
