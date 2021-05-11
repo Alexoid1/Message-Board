@@ -14,7 +14,7 @@
 - Ejs
 
 ## Live Demo
-[Live Demo Link](https://Message-Board.alexoid.repl.c)
+[Live Demo Link](https://Message-Board.alexoid.repl.co)
  
 
 ### Prerequisites
